@@ -23,17 +23,17 @@ class BankaHesabi:
         print(f"Hesap No: {self.hesap_numarasi}")
         print(f"Bakiye: {self.bakiye} TL")
 
-Bankahesabi1 = BankaHesabi("nisa", "08", 1000)
+Bankahesabi1 = BankaHesabi("nisa", "08", 1000)  # hesaplarımızı tanımladık
 Bankahesabi2 = BankaHesabi("ayşe", "09", 2000)
 Bankahesabi3 = BankaHesabi("ahsen", "39", 30000)
 Bankahesabi4 = BankaHesabi("asli", "41", 4000)
 Bankahesabi5 = BankaHesabi("elif", "44", 5000)
 
-sahip = input("Hesap sahibinin adı giriniz: ")
+sahip = input("Hesap sahibinin adı giriniz: ")   #hangi hesap için işem yapmamz gerektiğini seçtirdik
 hesap_no = input("Hesap numarasını giriniz: ")
 
-if sahip == Bankahesabi1.hesap_sahibi and hesap_no == Bankahesabi1.hesap_numarasi:
-    Bankahesabi1.bakiye_goruntule()
+if sahip == Bankahesabi1.hesap_sahibi and hesap_no == Bankahesabi1.hesap_numarasi:   #hangi işlem yapıldı ve sonuçlarını yazdırdık
+    
     islem = input("Yapmak istediğiniz işlem (yatır/çek/bakiye): ")
     miktar = float(input("Miktar: "))
     if islem == "yatır":
@@ -44,8 +44,10 @@ if sahip == Bankahesabi1.hesap_sahibi and hesap_no == Bankahesabi1.hesap_numaras
         Bankahesabi1.bakiye_goruntule()
     else:
         print("Geçersiz işlem.")
+    Bankahesabi1.bakiye_goruntule()
+
 if sahip == Bankahesabi2.hesap_sahibi and hesap_no == Bankahesabi2.hesap_numarasi:
-    Bankahesabi2.bakiye_goruntule()
+   
     islem = input("Yapmak istediğiniz işlem (yatır/çek/bakiye): ")
     miktar = float(input("Miktar: "))
     if islem == "yatır":
@@ -55,9 +57,11 @@ if sahip == Bankahesabi2.hesap_sahibi and hesap_no == Bankahesabi2.hesap_numaras
     elif islem == "bakiye":
         Bankahesabi2.bakiye_goruntule()
     else:
-        print("Geçersiz işlem.")    
+        print("Geçersiz işlem.")     
+    Bankahesabi2.bakiye_goruntule()
+
 if sahip == Bankahesabi3.hesap_sahibi and hesap_no == Bankahesabi3.hesap_numarasi:
-    Bankahesabi3.bakiye_goruntule()
+    
     islem = input("Yapmak istediğiniz işlem (yatır/çek/bakiye): ")
     miktar = float(input("Miktar: "))
     if islem == "yatır":
@@ -68,8 +72,10 @@ if sahip == Bankahesabi3.hesap_sahibi and hesap_no == Bankahesabi3.hesap_numaras
         Bankahesabi3.bakiye_goruntule()
     else:
         print("Geçersiz işlem.")
+    Bankahesabi3.bakiye_goruntule()
+
 if sahip == Bankahesabi4.hesap_sahibi and hesap_no == Bankahesabi4.hesap_numarasi:
-    Bankahesabi4.bakiye_goruntule()
+    
     islem = input("Yapmak istediğiniz işlem (yatır/çek/bakiye): ")
     miktar = float(input("Miktar: "))
     if islem == "yatır":
@@ -80,8 +86,10 @@ if sahip == Bankahesabi4.hesap_sahibi and hesap_no == Bankahesabi4.hesap_numaras
         Bankahesabi4.bakiye_goruntule()
     else:
         print("Geçersiz işlem.")
+    Bankahesabi4.bakiye_goruntule()
+
 if sahip == Bankahesabi5.hesap_sahibi and hesap_no == Bankahesabi5.hesap_numarasi:
-    Bankahesabi5.bakiye_goruntule()
+    
     islem = input("Yapmak istediğiniz işlem (yatır/çek/bakiye): ")
     miktar = float(input("Miktar: "))
     if islem == "yatır":
@@ -91,4 +99,5 @@ if sahip == Bankahesabi5.hesap_sahibi and hesap_no == Bankahesabi5.hesap_numaras
     elif islem == "bakiye":
         Bankahesabi5.bakiye_goruntule()
     else:
-        print("Geçersiz işlem.")                                
+        print("Geçersiz işlem.")               
+    Bankahesabi5.bakiye_goruntule()                
